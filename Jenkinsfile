@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'apache --version'                
+                sh 'node --version'
+                sh 'svn --version'
             }
-        }
-    }
+        }
+    }
 }
