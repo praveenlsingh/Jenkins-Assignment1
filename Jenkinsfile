@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy'){
             steps{
-                sh "docker run -dp http://34.207.134.127/:80 my-apache-image:latest"
+                sh "docker run -dp 34.207.134.127:80 my-apache-image:latest"
             }
         }
     }
